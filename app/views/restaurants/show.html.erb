@@ -1,0 +1,10 @@
+<div class="card-product">
+<h1><%= @restaurant.name %></h1>
+  <img src="https://source.unsplash.com/random" />
+  <div class="card-product-infos">
+    <h2>Address: <%=  @restaurant.address%></h2>
+    <h3>Category: <%= @restaurant.category %></h3>
+    <h3>Eye: <%= @restaurant.phone_number %></h3>
+  </div>
+  <%= link_to 'Reviews', restaurant_reviews_path(@restaurant) %>
+</div>

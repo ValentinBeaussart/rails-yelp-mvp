@@ -1,0 +1,8 @@
+<main>
+<h1>Restaurants :</h1>
+<ol class="gradient-list">
+<% @restaurants.each do |r| %>
+<li><%= link_to r.name, restaurant_path(r), class: "link" %></li>
+<% end %>
+</ol>
+</main>
